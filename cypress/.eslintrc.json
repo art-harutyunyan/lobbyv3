@@ -1,13 +1,11 @@
 {
-    "extends": [
-        "plugin:cypress/recommended"
-    ],
-    "rules": {
-        "cypress/no-assigning-return-values": "error", // does not allow to assign cy.get to a variable
-        "cypress/no-unnecessary-waiting": "error", // does not allow cy.wait in the code
-        // "cypress/assertion-before-screenshot": "warn", // warns assertion before the screenshot 
-        "cypress/no-force": "warn", // warns when forcing something, like cy.click({force: true})
-        "cypress/no-async-tests": "error" // no it('test', async () ) tests
-        // "cypress/no-pause": "error" // no cy.pause(), it is needed sometimes to debug some part of code, please disable it once needed
-    }
+  "extends": ["plugin:cypress/recommended"],
+  "rules": {
+    "cypress/no-assigning-return-values": "error", // does not allow to assign cy.get to a variable
+    "cypress/no-unnecessary-waiting": "error", // does not allow cy.wait in the code
+    // "cypress/assertion-before-screenshot": "warn", // warns assertion before the screenshot
+    "cypress/no-force": "warn", // warns when forcing something, like cy.click({force: true})
+    "cypress/no-async-tests": "error" // no it('test', async () ) tests
+    // "cypress/no-pause": "error" // no cy.pause(), it is needed sometimes to debug some part of code, please disable it once needed
+  }
 }
