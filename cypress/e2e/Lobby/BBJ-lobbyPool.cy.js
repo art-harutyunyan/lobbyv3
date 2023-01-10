@@ -8,7 +8,7 @@ describe('Bad Beat Jackpot pool tests', () => {
     cy.login(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
   });
 
-  it('expera', () => {
+  it('Bad Beat Jackpot Pool validation', () => {
     let pool;
     cy.request({
       method: 'GET',
