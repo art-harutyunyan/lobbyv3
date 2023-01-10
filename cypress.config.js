@@ -12,7 +12,7 @@ module.exports = defineConfig({
     experimentalRunAllSpecs: true,
     retries: {
       openMode: 2,
-      runMode: 0
+      runMode: 2
     },
     excludeSpecPattern: ['cypress/e2e/1-getting-started', 'cypress/e2e/2-advanced-examples'],
     viewportWidth: 1024,

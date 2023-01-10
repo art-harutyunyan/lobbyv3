@@ -1,6 +1,6 @@
 import emptyTables from '../../fixtures/tableRelatedData/emptyTables.json';
 
-describe('Validating the table prives section', () => {
+describe('Validating the table priview section', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.intercept('GET', '**/tables*', { fixture: './tableRelatedData/emptyTables.json' }).as('tables');
