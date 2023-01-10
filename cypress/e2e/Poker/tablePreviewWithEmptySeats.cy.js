@@ -60,6 +60,12 @@ describe('Validating the table prives section', () => {
               expect(buyin.text()).to.equal(Cypress.$('.table-info-buyin').find('div').eq(1).text());
               expect(+buyin.text().replace(/[^0-9\,\r]/g, '')).to.equal(emptyTables.tables[i].minBuyIn);
             });
+          cy.get('div[class="btn call-to-action call-to-action--link"]')
+            .contains('open')
+            .should('be.visible')
+            .find('img')
+            .invoke('attr', 'src')
+            .should('include', '/static/media/eye-icon.3eff0d18.svg');
         });
     });
   });
