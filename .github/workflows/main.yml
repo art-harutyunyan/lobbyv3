@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        run: |
+          echo '${{ secrets.CYPRESS_ENV_CI }}' > Cypress.env.json
 
       - name: Cypress run
         uses: cypress-io/github-action@v3
