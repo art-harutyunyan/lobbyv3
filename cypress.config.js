@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    projectId: 'xoqp6b',
     $schema: 'https://on.cypress.io/cypress.schema.json',
     baseUrl: 'https://pokerlv3.draft10.com',
     defaultCommandTimeout: 6000, // the default one is 4s, we set the defult one to 6s

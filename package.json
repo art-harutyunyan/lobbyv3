@@ -1,17 +1,17 @@
 {
-    "name": "lobbyv3-new",
-    "version": "1.0.0",
-    "description": "This is the e2e and integration tests for lobbyV3 project",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Arthur",
-    "license": "ISC",
-    "devDependencies": {
-        "chai-sorted": "^0.2.0",
-        "cypress": "^12.2.0",
-        "eslint-plugin-cypress": "^2.12.1",
-        "prettier": "2.8.1"
-    }
+  "name": "lobbyv3-new",
+  "version": "1.0.0",
+  "description": "This is the e2e and integration tests for lobbyV3 project",
+  "main": "index.js",
+  "scripts": {
+    "cypress:cloud": "npx cypress run --record --key 52c7c848-91af-4104-88e1-463a93f00393"
+  },
+  "author": "Arthur",
+  "license": "ISC",
+  "devDependencies": {
+    "chai-sorted": "^0.2.0",
+    "cypress": "^12.2.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "prettier": "2.8.1"
+  }
 }
