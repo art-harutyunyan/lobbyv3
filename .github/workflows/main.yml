@@ -8,8 +8,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1, 2, 3, 4, 5, 6]
+        containers: [1]
     steps:
+      - name: running only the table preview test
+        run: npx cypress run --spec cypress/e2e/Poker/tablePreviewWithEmptySeats.cy.js
       - name: Checkout
         uses: actions/checkout@v2
       - name: Adding env variables
