@@ -18,7 +18,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          browser: electron
+          browser: chrome
           headless: true
           record: true
           parallel: true
