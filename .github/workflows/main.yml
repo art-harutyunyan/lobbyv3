@@ -10,13 +10,13 @@ jobs:
       matrix:
         containers: [1]
     steps:
-      - name: running only the table preview test
-        run: npx cypress run --spec cypress/e2e/Poker/tablePreviewWithEmptySeats.cy.js
       - name: Checkout
         uses: actions/checkout@v2
       - name: Adding env variables
         run: |
           echo '${{ secrets.CYPRESS_ENV_CI }}' > cypress.env.json
+      - name: running only the table preview test
+        run: npx cypress run --spec cypress/e2e/Poker/tablePreviewWithEmptySeats.cy.js
 
       - name: Cypress run
         uses: cypress-io/github-action@v3
