@@ -2,15 +2,17 @@ chai.use(require('chai-sorted'));
 
 describe('Validating the sorting by the Seat column', () => {
   beforeEach(() => {
-    cy.visit('/');
+    // cy.visit('/');
     cy.intercept('GET', '**/tables*', { fixture: 'tableRelatedData/tablesWithPlayers.json' }).as('tables');
-    cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.loginViaAPISession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+
+    // cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
     cy.visit('/');
     cy.wait('@tables');
   });
 
   it('Validating sorting by Seat column ASC', () => {
-    cy.visit('/');
+    // cy.visit('/');
     const seatsArray = [];
 
     cy.get('.table-list-item__seats').find('button').should('contain.text', 'Seats');
@@ -31,7 +33,7 @@ describe('Validating the sorting by the Seat column', () => {
   });
 
   it('Validating sorting by Seat column DESC', () => {
-    cy.visit('/');
+    // cy.visit('/');
     const seatsArray = [];
 
     cy.get('.table-list-item__seats').find('i[class="fa fa-sort-desc"]').click({ force: true });

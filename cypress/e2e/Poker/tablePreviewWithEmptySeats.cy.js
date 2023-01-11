@@ -2,9 +2,11 @@ import emptyTables from '../../fixtures/tableRelatedData/emptyTables.json';
 
 describe('Validating the table priview section', () => {
   beforeEach(() => {
-    cy.visit('/');
+    // cy.visit('/');
     cy.intercept('GET', '**/tables*', { fixture: './tableRelatedData/emptyTables.json' }).as('tables');
-    cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.loginViaAPISession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+
+    // cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
     cy.visit('/');
     cy.wait('@tables');
   });

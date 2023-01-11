@@ -1,0 +1,44 @@
+{
+  "exp": 28800,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTAwMTIzLCJuYW1lIjoiY2x1YmFwcDUiLCJ0eXBlSWQiOjEsInBlcm1pc3Npb24iOjQsIm93bmVyIjoid2ViIiwibG9naW5WZXJpZmljYXRpb24iOmZhbHNlLCJwYXJlbnRzIjpbNTAwMDA1LDUwMDAwNCw1MDAwMDEsMF0sIm9wZXJhdG9ySWQiOjUwMDAwNSwiaWF0IjoxNjczNDU4MTM0LCJleHAiOjE2NzM0ODY5MzR9.x3UriVIntIvhC7GHe4Q0A-d48Xm85-gWPaDAz00Qogc",
+  "altCurrency": false,
+  "countryCode": "USA",
+  "forcedToChangePassword": false,
+  "id": 500123,
+  "message": "Enjoy your token",
+  "nationalId": "",
+  "nickname": "clubapp5",
+  "parents": [500005, 500004, 500001, 0],
+  "permission": 4,
+  "personalInfo": {
+    "avatar": { "imagePath": "https://media.draftplaza.com/mediaassets/avatars/playerPredefined/1.json", "name": "1" }
+  },
+  "typeId": 1,
+  "username": "clubapp5",
+  "wallets": [
+    {
+      "products": [5, 321, 253, 305, 154, 303, 157, 320, 315],
+      "_id": "5fd9f17525d29244d83ac1d0",
+      "balance": 20009,
+      "currency": "TRY",
+      "priority": 0,
+      "name": "WTRY0"
+    },
+    {
+      "products": [5],
+      "_id": "5fd9f17525d29244d83ac1d1",
+      "balance": 0,
+      "currency": "DMD",
+      "priority": 10,
+      "name": "WDMD1"
+    },
+    {
+      "products": [5],
+      "_id": "5fd9f17525d29244d83ac1d2",
+      "balance": 0,
+      "currency": "FPP",
+      "priority": 20,
+      "name": "WFPP2"
+    }
+  ]
+}

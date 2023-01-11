@@ -2,9 +2,11 @@ chai.use(require('chai-sorted'));
 
 describe('Validating the sorting by Blinds column', () => {
   beforeEach(() => {
-    cy.visit('/');
+    // cy.visit('/');
     cy.intercept('GET', '**/tables*', { fixture: 'tableRelatedData/tablesWithPlayers.json' }).as('tables');
-    cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.loginViaAPISession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+
+    // cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
     cy.visit('/');
     cy.wait('@tables');
   });

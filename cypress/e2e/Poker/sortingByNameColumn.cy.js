@@ -2,15 +2,17 @@ chai.use(require('chai-sorted'));
 
 describe('Validate the table list sorting', () => {
   beforeEach(() => {
-    cy.visit('/');
+    // cy.visit('/');
     cy.intercept('GET', '**/tables*', { fixture: 'tableRelatedData/tablesWithPlayers.json' }).as('tables');
-    cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.loginViaAPISession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+
+    // cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
     cy.visit('/');
     cy.wait('@tables');
   });
 
   it('Validates the sorting by the "Name" column ASC', () => {
-    cy.visit('/');
+    // cy.visit('/');
 
     // validating the name of the column
     cy.get('.table-list-item__name').find('button').should('contain.text', 'Name');
@@ -26,7 +28,7 @@ describe('Validate the table list sorting', () => {
   });
 
   it('Validates the sorting by the "Name" column DESC', () => {
-    cy.visit('/');
+    // cy.visit('/');
     // clicking to name sorter by DESC
     cy.get('.table-list-item__name').find('i[class="fa fa-sort-desc"]').click({ force: true });
 
