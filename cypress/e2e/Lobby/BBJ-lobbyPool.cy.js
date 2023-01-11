@@ -1,18 +1,19 @@
 describe('Bad Beat Jackpot pool tests', () => {
   beforeEach(() => {
     cy.visit('/');
-    // cy.loginWithSession(
-    //     Cypress.env('userAccounts').username,
-    //     Cypress.env('userAccounts').password,
-    // );
     cy.login(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.window().then((win) => {
+      const storage = JSON.parse(win.localStorage.getItem('account-data')).token;
+      cy.wrap(storage).as('token');
+    });
   });
 
-  it('Bad Beat Jackpot Pool validation', () => {
+  it('Bad Beat Jackpot Pool validation', function () {
     let pool;
+
     cy.request({
       method: 'GET',
-      url: `${Cypress.env('apis').jackpot}token=${JSON.parse(window.localStorage['account-data']).token}`
+      url: `${Cypress.env('apis').jackpot}token=${this.token}`
     }).then((resp) => {
       resp.body.jackpots.forEach((element) => {
         if (element.name === 'Bad beat jackpot') {
