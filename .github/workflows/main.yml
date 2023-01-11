@@ -16,6 +16,7 @@ jobs:
         run: |
           echo '${{ secrets.CYPRESS_ENV_CI }}' > cypress.env.json
       - name: running only the table preview test
+        uses: ./
         with:
           working-directory: cypress/e2e/Poker
           spec: cypress/e2e/Poker/tablePreviewWithEmptySeats.cy.js
