@@ -15,15 +15,11 @@ jobs:
       - name: Adding env variables
         run: |
           echo '${{ secrets.CYPRESS_ENV_CI }}' > cypress.env.json
-      - name: running only the table preview test
-        uses: cypress-io/github-action@v3
-        with:
-          spec: cypress/e2e/Poker/tablePreviewWithEmptySeats.cy.js
-
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          browser: chrome
+          browser: electron
+          headless: true
           record: true
           parallel: true
         env:
