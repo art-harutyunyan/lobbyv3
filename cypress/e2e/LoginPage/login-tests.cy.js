@@ -3,7 +3,7 @@ describe('Login Tests', () => {
     cy.visit('/');
   });
 
-  it.only('Logs in with correct credentials', () => {
+  it('Logs in with correct credentials', () => {
     // intercepting the authenticate request on login
     cy.intercept('POST', Cypress.env('apis').authenticate).as('login');
     cy.get('#signin-username').type(Cypress.env('userAccounts').username);

@@ -4,7 +4,7 @@ describe('Validating the table priview section', () => {
   beforeEach(() => {
     // cy.visit('/');
     cy.intercept('GET', '**/tables*', { fixture: './tableRelatedData/emptyTables.json' }).as('tables');
-    cy.loginViaAPISession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.loginViaAPI(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
 
     // cy.loginWithSession(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
     cy.visit('/');
