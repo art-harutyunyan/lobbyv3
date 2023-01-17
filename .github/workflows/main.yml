@@ -5,7 +5,6 @@ on: [push]
 jobs:
   machine:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome109-ff82
     strategy:
       fail-fast: false
       matrix:
@@ -17,7 +16,7 @@ jobs:
         run: |
           echo '${{ secrets.CYPRESS_ENV_CI }}' > cypress.env.json
       - name: Cypress run
-        uses: cypress-io/github-action@v3
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           headless: true
