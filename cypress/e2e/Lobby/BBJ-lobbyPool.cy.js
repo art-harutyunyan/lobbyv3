@@ -1,7 +1,7 @@
 describe('Bad Beat Jackpot pool tests', () => {
   beforeEach(() => {
     cy.visit('/');
-    cy.loginViaApi(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
+    cy.loginViaAPI(Cypress.env('userAccounts').username, Cypress.env('userAccounts').password);
     cy.window().then((win) => {
       const storage = JSON.parse(win.localStorage.getItem('account-data')).token;
       cy.wrap(storage).as('token');
