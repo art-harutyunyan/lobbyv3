@@ -5,7 +5,7 @@ on: [push]
 jobs:
   machine:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome87-ff82
+    container: cypress/browsers:node12.18.3-chrome109-ff82
     strategy:
       fail-fast: false
       matrix:
