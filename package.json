@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai-sorted": "^0.2.0",
-    "cypress": "^12.2.0",
+    "cypress": "^12.5.1",
     "eslint-plugin-cypress": "^2.12.1",
     "prettier": "2.8.1"
   }

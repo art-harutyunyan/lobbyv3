@@ -1,0 +1,585 @@
+{
+  "success": true,
+  "code": 200,
+  "result": {
+    "message": "OK",
+    "gameHistory": [
+      {
+        "tourId": null,
+        "isConsistent": true,
+        "accounts": [3761520, 1182300, 247902, 344681, 3860223],
+        "_id": "63aad366155622229fd9bd62",
+        "gameId": 437991420,
+        "gameType": "Omaha",
+        "date": "2022-12-27T11:13:42.000Z",
+        "gameInfo": {
+          "History": {
+            "xmlns": "http://www.emaster.com/HandHistory",
+            "General": {
+              "Description": "Bolu 1",
+              "Id": 200000646,
+              "ActiveTableId": 3284420,
+              "aamsId": "",
+              "aamsTimestamp": 0,
+              "CorrelationId": 8639186,
+              "GameCode": "PokerOmahaCash",
+              "Type": "Omaha",
+              "Limit": "No Limit",
+              "IsAnonymous": false,
+              "Seats": 6,
+              "Currency": "TRY",
+              "moneysign": "",
+              "Smallblind": 1000,
+              "Bigblind": 2000,
+              "Version": "QTPOKER-TABLE-LOGIC-03-12",
+              "License": "Valid till 31-12-2011"
+            },
+            "Game": {
+              "Id": 437991420,
+              "PhaseId": 963,
+              "HandStartDate": "2022-12-27T14:12:52+0300",
+              "Timestamp": "2022-12-27T14:13:42+0300",
+              "Board": {
+                "Card": [
+                  {
+                    "content": "6d",
+                    "index": 1
+                  },
+                  {
+                    "content": "2c",
+                    "index": 2
+                  },
+                  {
+                    "content": "6s",
+                    "index": 3
+                  },
+                  {
+                    "content": "Td",
+                    "index": 4
+                  },
+                  {
+                    "content": "Jd",
+                    "index": 5
+                  }
+                ]
+              },
+              "Dealerseat": 1
+            },
+            "Players": {
+              "Player": [
+                {
+                  "name": "Ramazan21",
+                  "seat": 1,
+                  "beginstack": 20000,
+                  "id": 3761520,
+                  "ipaddress": "66.102.7.0",
+                  "port": 0,
+                  "tablesessionId": "20221227140610-201-19775496",
+                  "avatarId": 117,
+                  "SystemInfo": ""
+                },
+                {
+                  "name": "pbt_Duman",
+                  "seat": 3,
+                  "beginstack": 70660,
+                  "id": 1182300,
+                  "ipaddress": "28.105.7.0",
+                  "port": 0,
+                  "tablesessionId": "20221227134242-201-19774660",
+                  "avatarId": 105,
+                  "SystemInfo": ""
+                },
+                {
+                  "name": "lightning52",
+                  "seat": 4,
+                  "beginstack": 155447,
+                  "id": 247902,
+                  "ipaddress": "153.107.7.0",
+                  "port": 0,
+                  "tablesessionId": "20221227132806-301-19773357",
+                  "avatarId": 113,
+                  "SystemInfo": ""
+                },
+                {
+                  "name": "prb_miraz123",
+                  "seat": 5,
+                  "beginstack": 20000,
+                  "id": 344681,
+                  "ipaddress": "24.108.7.0",
+                  "port": 0,
+                  "tablesessionId": "20221227141034-301-19774845",
+                  "avatarId": 111,
+                  "SystemInfo": ""
+                },
+                {
+                  "name": "mnb_ECSELANCE",
+                  "seat": 6,
+                  "beginstack": 1480778,
+                  "id": 3860223,
+                  "ipaddress": "152.103.7.0",
+                  "port": 0,
+                  "tablesessionId": "20221227072037-301-19765556",
+                  "avatarId": 0,
+                  "SystemInfo": ""
+                }
+              ]
+            },
+            "Posts": {
+              "Player": [
+                {
+                  "name": "pbt_Duman",
+                  "seat": 3,
+                  "type": "sb",
+                  "amount": 1000,
+                  "stackafter": 69660
+                },
+                {
+                  "name": "lightning52",
+                  "seat": 4,
+                  "type": "bb",
+                  "amount": 2000,
+                  "stackafter": 153447
+                }
+              ]
+            },
+            "Betting": {
+              "Round": [
+                {
+                  "type": "preflop",
+                  "Actions": {
+                    "Action": [
+                      {
+                        "name": "prb_miraz123",
+                        "seat": 5,
+                        "action": "raises",
+                        "amount": 19790,
+                        "stackafter": 210
+                      },
+                      {
+                        "name": "mnb_ECSELANCE",
+                        "seat": 6,
+                        "action": "calls",
+                        "amount": 19790,
+                        "stackafter": 1460988
+                      },
+                      {
+                        "name": "Ramazan21",
+                        "seat": 1,
+                        "action": "raises",
+                        "amount": 19790,
+                        "stackafter": 210
+                      },
+                      {
+                        "name": "pbt_Duman",
+                        "seat": 3,
+                        "action": "folds"
+                      },
+                      {
+                        "name": "lightning52",
+                        "seat": 4,
+                        "action": "folds"
+                      }
+                    ]
+                  },
+                  "Pots": {
+                    "Pot": {
+                      "index": 0,
+                      "grossAmount": 62370,
+                      "rake": 1871
+                    }
+                  }
+                },
+                {
+                  "type": "flop"
+                },
+                {
+                  "type": "turn"
+                },
+                {
+                  "type": "river"
+                }
+              ]
+            },
+            "Summary": {
+              "Board": {
+                "boardIndex": 0,
+                "Card": [
+                  {
+                    "content": "6d",
+                    "index": 1
+                  },
+                  {
+                    "content": "2c",
+                    "index": 2
+                  },
+                  {
+                    "content": "6s",
+                    "index": 3
+                  },
+                  {
+                    "content": "Td",
+                    "index": 4
+                  },
+                  {
+                    "content": "Jd",
+                    "index": 5
+                  }
+                ]
+              },
+              "Rake": 1871,
+              "Players": {
+                "Player": [
+                  {
+                    "name": "Ramazan21",
+                    "id": 3761520,
+                    "seat": 1,
+                    "bets": 19790,
+                    "visualstack": 232482,
+                    "ticketid": "",
+                    "rake": 594,
+                    "description": "TwoPair (J 6 K)",
+                    "showed": true,
+                    "subscriptionId": 0,
+                    "Cards": {
+                      "Card": [
+                        {
+                          "content": "7h",
+                          "index": 1
+                        },
+                        {
+                          "content": "Jh",
+                          "index": 2
+                        },
+                        {
+                          "content": "Ks",
+                          "index": 3
+                        },
+                        {
+                          "content": "9c",
+                          "index": 4
+                        }
+                      ]
+                    },
+                    "Client": {
+                      "Id": "f25590b0",
+                      "Version": 300
+                    }
+                  },
+                  {
+                    "name": "pbt_Duman",
+                    "id": 1182300,
+                    "seat": 3,
+                    "bets": 1000,
+                    "visualstack": 302092,
+                    "ticketid": "",
+                    "rake": 30,
+                    "subscriptionId": 0,
+                    "Cards": {
+                      "Card": [
+                        {
+                          "content": "8c",
+                          "index": 1
+                        },
+                        {
+                          "content": "3c",
+                          "index": 2
+                        },
+                        {
+                          "content": "5c",
+                          "index": 3
+                        },
+                        {
+                          "content": "3h",
+                          "index": 4
+                        }
+                      ]
+                    },
+                    "Client": {
+                      "Id": "f25590b0",
+                      "Version": 300
+                    }
+                  },
+                  {
+                    "name": "lightning52",
+                    "id": 247902,
+                    "seat": 4,
+                    "bets": 2000,
+                    "visualstack": 385519,
+                    "ticketid": "",
+                    "rake": 60,
+                    "subscriptionId": 0,
+                    "Cards": {
+                      "Card": [
+                        {
+                          "content": "Ah",
+                          "index": 1
+                        },
+                        {
+                          "content": "3s",
+                          "index": 2
+                        },
+                        {
+                          "content": "Jc",
+                          "index": 3
+                        },
+                        {
+                          "content": "5s",
+                          "index": 4
+                        }
+                      ]
+                    },
+                    "Client": {
+                      "Id": "f25590b0",
+                      "Version": 300
+                    }
+                  },
+                  {
+                    "name": "prb_miraz123",
+                    "id": 344681,
+                    "seat": 5,
+                    "bets": 19790,
+                    "visualstack": 232482,
+                    "ticketid": "",
+                    "rake": 593,
+                    "description": "Flush (J T 6 4 2)",
+                    "showed": true,
+                    "subscriptionId": 0,
+                    "Cards": {
+                      "Card": [
+                        {
+                          "content": "Kc",
+                          "index": 1
+                        },
+                        {
+                          "content": "As",
+                          "index": 2
+                        },
+                        {
+                          "content": "4d",
+                          "index": 3
+                        },
+                        {
+                          "content": "2d",
+                          "index": 4
+                        }
+                      ]
+                    },
+                    "Client": {
+                      "Id": "f25590b0",
+                      "Version": 300
+                    }
+                  },
+                  {
+                    "name": "mnb_ECSELANCE",
+                    "id": 3860223,
+                    "seat": 6,
+                    "bets": 19790,
+                    "visualstack": 1755559,
+                    "ticketid": "",
+                    "wins": 60499,
+                    "rake": 594,
+                    "description": "Flush (A J T 8 6)",
+                    "showed": true,
+                    "subscriptionId": 0,
+                    "Cards": {
+                      "Card": [
+                        {
+                          "content": "Qh",
+                          "index": 1
+                        },
+                        {
+                          "content": "Ad",
+                          "index": 2
+                        },
+                        {
+                          "content": "8d",
+                          "index": 3
+                        },
+                        {
+                          "content": "6h",
+                          "index": 4
+                        }
+                      ]
+                    },
+                    "WinningCards": {
+                      "boardIndex": 0,
+                      "description": "Flush (A J T 8 6)",
+                      "Card": [
+                        {
+                          "content": "6d",
+                          "index": 1
+                        },
+                        {
+                          "content": "Td",
+                          "index": 2
+                        },
+                        {
+                          "content": "8d",
+                          "index": 3
+                        },
+                        {
+                          "content": "Jd",
+                          "index": 4
+                        },
+                        {
+                          "content": "Ad",
+                          "index": 5
+                        }
+                      ]
+                    },
+                    "Client": {
+                      "Id": "f25590b0",
+                      "Version": 300
+                    }
+                  }
+                ]
+              },
+              "Jackpots": {
+                "Jackpot": [
+                  {
+                    "id": 1,
+                    "jackpottype": "badBeatJackpot",
+                    "name": "Bad beat jackpot",
+                    "jackpotsIncrement": 45,
+                    "jackpotsFee": 5,
+                    "bbjTotalJackpotDistribution": 0,
+                    "bbjPlayerDistribution": 0,
+                    "bbjReseedDistribution": 0,
+                    "bbjHouseFee": 0,
+                    "Contributors": {
+                      "Player": [
+                        {
+                          "id": 247902,
+                          "fee": 1,
+                          "contribution": 9,
+                          "betType": 1
+                        },
+                        {
+                          "id": 344681,
+                          "fee": 1,
+                          "contribution": 9,
+                          "betType": 1
+                        },
+                        {
+                          "id": 1182300,
+                          "fee": 1,
+                          "contribution": 9,
+                          "betType": 1
+                        },
+                        {
+                          "id": 3761520,
+                          "fee": 1,
+                          "contribution": 9,
+                          "betType": 1
+                        },
+                        {
+                          "id": 3860223,
+                          "fee": 1,
+                          "contribution": 9,
+                          "betType": 1
+                        }
+                      ]
+                    },
+                    "Winners": {
+                      "Player": [
+                        {
+                          "id": 247902,
+                          "winning": 232482,
+                          "cards": "",
+                          "description": "",
+                          "bbjwinnertype": "externalPlayer"
+                        },
+                        {
+                          "id": 344681,
+                          "winning": 232482,
+                          "cards": "",
+                          "description": "",
+                          "bbjwinnertype": "externalPlayer"
+                        },
+                        {
+                          "id": 1182300,
+                          "winning": 232482,
+                          "cards": "",
+                          "description": "",
+                          "bbjwinnertype": "externalPlayer"
+                        },
+                        {
+                          "id": 3761520,
+                          "winning": 232482,
+                          "cards": "",
+                          "description": "",
+                          "bbjwinnertype": "externalPlayer"
+                        },
+                        {
+                          "id": 3860223,
+                          "winning": 232482,
+                          "cards": "",
+                          "description": "",
+                          "bbjwinnertype": "externalPlayer"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "jackpottype": "highHandJackpot",
+                    "name": "High hand jackpot",
+                    "jackpotsIncrement": 0,
+                    "jackpotsFee": 1240,
+                    "Contributors": {
+                      "Player": [
+                        {
+                          "id": 247902,
+                          "fee": 400,
+                          "contribution": 0,
+                          "betType": 10
+                        },
+                        {
+                          "id": 344681,
+                          "fee": 200,
+                          "contribution": 0,
+                          "betType": 5
+                        },
+                        {
+                          "id": 1182300,
+                          "fee": 40,
+                          "contribution": 0,
+                          "betType": 1
+                        },
+                        {
+                          "id": 3761520,
+                          "fee": 200,
+                          "contribution": 0,
+                          "betType": 5
+                        },
+                        {
+                          "id": 3860223,
+                          "fee": 400,
+                          "contribution": 0,
+                          "betType": 10
+                        }
+                      ]
+                    },
+                    "Winners": {
+                      "Player": {
+                        "id": 3860223,
+                        "winning": 2000,
+                        "cards": "6d Td 8d Jd Ad",
+                        "description": "Flush (A J T 8 6)",
+                        "combination": "flushAce"
+                      }
+                    }
+                  }
+                ]
+              },
+              "Insurance": ""
+            }
+          }
+        },
+        "dateFormated": "2022-12-27 14:13:42"
+      }
+    ],
+    "count": 1,
+    "limit": 500
+  }
+}
