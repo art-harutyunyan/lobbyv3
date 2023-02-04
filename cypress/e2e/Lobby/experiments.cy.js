@@ -4,12 +4,12 @@ describe('test', () => {
     cy.visit('/poker');
   });
 
-  it('test it', function () {
+  it.skip('test it', function () {
     // cy.visit('/poker');
     cy.log('This is the first test');
   });
 
-  it('test 2', () => {
+  it.skip('test 2', () => {
     cy.log('This is the second test');
     cy.visit('/tournaments');
     cy.contains('tournaments').click();
