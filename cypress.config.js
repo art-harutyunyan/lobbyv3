@@ -15,7 +15,7 @@ module.exports = defineConfig({
       runMode: 2
     },
     excludeSpecPattern: ['cypress/e2e/1-getting-started', 'cypress/e2e/2-advanced-examples'],
-    viewportWidth: 1024,
+    viewportWidth: 1025,
     viewportHeight: 875
   }
 });
